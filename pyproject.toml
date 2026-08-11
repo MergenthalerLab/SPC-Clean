@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "spc-clean"
+version = "0.1.0"
+description = "SPC-Clean: Neighborhood topology-based reduction of speckle and isolated pixel noise in fluorescence microscopy images"
+readme = "README.md"
+requires-python = ">=3.9"
+
+authors = [
+    {name = "Pendar Alirezazadeh"}
+]
+
+license = "GPL-3.0-or-later"
+
+dependencies = [
+    "napari",
+    "numpy",
+    "scipy",
+    "magicgui",
+    "tifffile",
+]
+
+
+[project.entry-points."napari.manifest"]
+spc-clean = "spc_clean:napari.yaml"
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+
+[tool.setuptools.package-data]
+spc_clean = ["napari.yaml"]

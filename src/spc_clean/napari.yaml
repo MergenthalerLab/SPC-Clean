@@ -1,0 +1,21 @@
+# =============================================================================
+# SPC-Clean: Sparse Pixel Cluster Cleaning
+# Neighborhood Topology-Based Reduction of Speckle and Isolated Pixel Noise
+# in Fluorescence Microscopy Images
+#
+# Author: Pendar Alirezazadeh
+# Copyright (c) 2026 Pendar Alirezazadeh
+# =============================================================================
+
+name: spc-clean
+display_name: SPC-Clean
+
+contributions:
+  commands:
+    - id: spc-clean.widget
+      python_name: spc_clean._widget:spc_clean_widget
+      title: Run SPC-Clean
+
+  widgets:
+    - command: spc-clean.widget
+      display_name: SPC-Clean

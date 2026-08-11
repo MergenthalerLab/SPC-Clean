@@ -1,1 +1,115 @@
 # SPC-Clean
+
+**SPC-Clean (Sparse Pixel Cluster Cleaning)** is a neighborhood
+topology-based method for reducing speckle and isolated pixel noise in
+fluorescence microscopy images.
+
+SPC-Clean operates on the **thresholded foreground topology rather than
+directly modifying image intensities**. It iteratively removes
+foreground pixels with insufficient local neighborhood support until the
+mask converges. The refined mask can then be mapped back to the original
+image while preserving the original intensities of retained foreground
+pixels.
+
+## Installation
+
+Clone the repository and install SPC-Clean:
+
+``` bash
+git clone https://github.com/MergenthalerLab/SPC-Clean.git
+cd SPC-Clean
+pip install -e .
+```
+
+SPC-Clean requires **Python \>= 3.9**.
+
+## Usage
+
+### napari plugin
+
+After installation, launch napari:
+
+``` bash
+napari
+```
+
+Open **SPC-Clean** from the napari plugin menu. The plugin supports
+folder-based processing and generates SPC-Clean binary masks and,
+optionally, filtered intensity images.
+
+### Python
+
+SPC-Clean can also be used directly as a Python function:
+
+``` python
+import tifffile
+from spc_clean import spc_clean
+
+image = tifffile.imread("image.tif")
+
+mask, filtered = spc_clean(
+    image,
+    threshold=128,
+    min_neighbors=3,
+)
+
+tifffile.imwrite("SPC_mask.tif", mask)
+tifffile.imwrite("SPC_filtered.tif", filtered)
+```
+
+Standalone examples for single-image and batch processing are provided
+in the `examples/` directory.
+
+## Parameters
+
+-   **`threshold`** --- intensity threshold used to generate the initial
+    foreground mask.
+-   **`min_neighbors`** --- minimum number of foreground neighbors
+    required for a foreground pixel to remain in the mask during
+    iterative pruning.
+
+## Outputs
+
+SPC-Clean returns:
+
+-   **SPC-Clean mask** --- refined binary foreground mask.
+-   **Filtered image** --- original image masked by the refined
+    foreground topology, preserving the original intensities of retained
+    pixels.
+
+## Repository Structure
+
+``` text
+SPC-Clean/
+├── LICENSE
+├── README.md
+├── pyproject.toml
+├── .gitignore
+├── examples/
+│   ├── spc_clean_single_image.py
+│   └── spc_clean_batch.py
+└── src/
+    └── spc_clean/
+        ├── __init__.py
+        ├── _algorithm.py
+        ├── _widget.py
+        └── napari.yaml
+```
+
+## Citation
+
+If you use SPC-Clean in scientific work, please cite the associated
+publication.
+
+> Citation information will be added following publication.
+
+## License
+
+SPC-Clean is released under the **GNU General Public License v3.0 or
+later (GPL-3.0-or-later)**. See the `LICENSE` file for details.
+
+## Author
+
+**Pendar Alirezazadeh**
+
+Copyright © 2026 Pendar Alirezazadeh
