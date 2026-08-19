@@ -105,8 +105,7 @@ publication.
 
 ## License
 
-SPC-Clean is released under the **GNU General Public License v3.0 or
-later (GPL-3.0-or-later)**. See the `LICENSE` file for details.
+SPC-Clean is released under a **PolyForm Noncommercial License 1.0.0** for non-commercial and academic research. For commercial licensing inquiries (including AI training, product development, or commercial applicatio), please contact us. See the `LICENSE` file for details.
 
 ## Author
 
