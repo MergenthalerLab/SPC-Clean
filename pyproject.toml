@@ -14,7 +14,7 @@ authors = [
     {name = "Pendar Alirezazadeh"}
 ]
 
-license = "GPL-3.0-or-later"
+license = "PolyForm-Noncommercial-1.0.0"
 
 dependencies = [
     "napari",
