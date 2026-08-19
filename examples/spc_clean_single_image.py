@@ -1,11 +1,15 @@
 # =============================================================================
 # SPC-Clean: Sparse Pixel Cluster Cleaning
-# Example: Processing a Single Microscopy Image
+# Neighborhood Topology-Based Reduction of Speckle and Isolated Pixel Noise
+# in Fluorescence Microscopy Images
 #
 # Author: Pendar Alirezazadeh
 # Copyright (c) 2026 Pendar Alirezazadeh
 #
-# SPDX-License-Identifier: GPL-3.0-or-later
+# Licensed under the PolyForm Noncommercial License 1.0.0.
+# SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
+#
+# See the LICENSE file in the project repository for the full license terms.
 # =============================================================================
 
 from pathlib import Path
