@@ -103,6 +103,10 @@ publication.
 
 > Citation information will be added following publication.
 
+## Sample data
+
+Sample image data that allow rapid evaluation of SPC-Clean were deposited on the open science platform Zenodo (https://doi.org/10.5281/zenodo.21934521).
+
 ## License
 
 SPC-Clean is released under a **PolyForm Noncommercial License 1.0.0** for non-commercial and academic research. For commercial licensing inquiries (including AI training, product development, or commercial applicatio), please contact us. See the `LICENSE` file for details.
