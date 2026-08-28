@@ -99,15 +99,15 @@ SPC-Clean/
 ## Citation
 
 If you use SPC-Clean in scientific work, please cite the associated
-publication.
+preprint.
 
-**SPC-Clean: A napari Plugin for Reducing Speckle and Isolated Pixel Noise in Fluorescence Microscopy Images**
-Pendar Alirezazadeh, Elena Marie Kirsch, Yuan Tian, Joerg Bewersdorf, Jens Rittscher, Philipp Mergenthaler
-bioRxiv 2026.08.24.744862; doi: https://doi.org/10.64898/2026.08.24.744862
+**SPC-Clean: A napari Plugin for Reducing Speckle and Isolated Pixel Noise in Fluorescence Microscopy Images** <br>
+Pendar Alirezazadeh, Elena Marie Kirsch, Yuan Tian, Joerg Bewersdorf, Jens Rittscher, Philipp Mergenthaler <br>
+**_bioRxiv_** 2026.08.24.744862; doi: https://doi.org/10.64898/2026.08.24.744862
 
 ## Sample data
 
-Sample image data that allow rapid evaluation of SPC-Clean were deposited on the open science platform Zenodo (https://doi.org/10.5281/zenodo.21934521).
+Sample image data that allow rapid evaluation of SPC-Clean were deposited on _Zenodo_ (https://doi.org/10.5281/zenodo.21934521).
 
 ## License
 
